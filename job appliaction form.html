@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        h1{text-align: center;}; 
+             
+    fieldset{background-color: #add8e6;}; /* Light Blue */
+</style>
+    <h1>Job application form</h1>
+
+</head>
+<body>
+    <style>
+       
+        div{text-align: center;}
+    </style>
+    <fieldset>
+        <legend><h2>Contact form</h2></legend>
+    <div><form action="/submit" method="post">
+        <label for="name">First Name</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="name">Last Name</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label For="Contact Number">Contact Number</label><br>
+        <input type="number" id="Contact Number" required min="0" max="9999999999"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br></div>
+        
+      
+    </form></div></fieldset>
+    
+    
+</body>
+<body>
+    <fieldset>
+        <legend><h2>Job Details*</h2></legend>
+        <div><form action="/submit" method="post"><br>
+        <label for="Position Applied For">Position Applied For:</label><br><br>
+        <select id="Position Applied For" name="Position Applied For" required><br>
+        <option value="--Select Position--">--Select Position--</option><br>
+        <option value="HR">HR</option><br><br>
+        <option value="Manager">Manager</option>
+        </select><BR><br><br>
+        <label for="Year Of Experience">Year Of Experience</label><br>
+        <input type="number" id="Year Of Experience"required min="1"><br><br>
+        <label For="Cover Letter">Cover Letter</label><br>
+        <input type="text" id="Cover Letter" required ><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br></div>
+        
+
+        </form></fieldset>
+</body>
+<body>
+  <fieldset>
+        <legend><h2>Availability</h2></legend>
+        <div><form action="/Submit" method="post">
+        <label for="Available start Date">Available start Date</label><br>
+        <input type="date" id="Available start Date"  required><br><br>
+        <label for="Gender"><b>Willing To Relocate</b></label><br>
+        <label for="yes">Yes</label><br>
+        
+        <input type="radio" id="Yes" name="Yes"value="Yes"><br>
+        <label for="No">no</label><br>
+        <input type="radio" id="No" name="No"value="No"><br>
+        </fieldset>
+           <div><input type="image" src="download.jpeg" alt="Submit Form"></div>
+
+    </div>
+</body>
+</html>
