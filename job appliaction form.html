@@ -1,74 +1,74 @@
 <html lang="en">
 <head>
-   
     <title>Document</title>
     <style>
-        h1{text-align: center;}; 
-             
-    fieldset{background-color: #add8e6;}; /* Light Blue */
-</style>
+        h1 { text-align: center; } 
+        fieldset { background-color: #add8e6; }
+        div { text-align: center; }
+    </style>
     <h1>Job application form</h1>
-
 </head>
 <body>
-    <style>
-       
-        div{text-align: center;}
-    </style>
     <fieldset>
         <legend><h2>Contact form</h2></legend>
-    <div><form action="/submit" method="post">
-        <label for="name">First Name</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="name">Last Name</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        <label For="Contact Number">Contact Number</label><br>
-        <input type="number" id="Contact Number" required min="0" max="9999999999"><br><br>
+        <div>
+            <form action="/submit" method="post">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+                
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" required><br><br>
+                
+                <label for="contact">Contact Number</label><br>
+                <input type="number" id="contact" name="contact" required min="0" max="9999999999"><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br></div>
-        
-      
-    </form></div></fieldset>
-    
-    
-</body>
-<body>
+                <label for="email1">Email:</label><br>
+                <input type="email" id="email1" name="email1" required><br><br>
+            </form>
+        </div>
+    </fieldset>
+
     <fieldset>
         <legend><h2>Job Details*</h2></legend>
-        <div><form action="/submit" method="post"><br>
-        <label for="Position Applied For">Position Applied For:</label><br><br>
-        <select id="Position Applied For" name="Position Applied For" required><br>
-        <option value="--Select Position--">--Select Position--</option><br>
-        <option value="HR">HR</option><br><br>
-        <option value="Manager">Manager</option>
-        </select><BR><br><br>
-        <label for="Year Of Experience">Year Of Experience</label><br>
-        <input type="number" id="Year Of Experience"required min="1"><br><br>
-        <label For="Cover Letter">Cover Letter</label><br>
-        <input type="text" id="Cover Letter" required ><br><br>
+        <div>
+            <form action="/submit" method="post"><br>
+                <label for="position">Position Applied For:</label><br><br>
+                <select id="position" name="position" required>
+                    <option value="">--Select Position--</option>
+                    <option value="HR">HR</option>
+                    <option value="Manager">Manager</option>
+                </select><br><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br></div>
-        
+                <label for="experience">Year Of Experience</label><br>
+                <input type="number" id="experience" name="experience" required min="1"><br><br>
 
-        </form></fieldset>
-</body>
-<body>
-  <fieldset>
+                <label for="cover">Cover Letter</label><br>
+                <input type="text" id="cover" name="cover" required><br><br>
+
+                <label for="email2">Email:</label><br>
+                <input type="email" id="email2" name="email2" required><br><br>
+            </form>
+        </div>
+    </fieldset>
+
+    <fieldset>
         <legend><h2>Availability</h2></legend>
-        <div><form action="/Submit" method="post">
-        <label for="Available start Date">Available start Date</label><br>
-        <input type="date" id="Available start Date"  required><br><br>
-        <label for="Gender"><b>Willing To Relocate</b></label><br>
-        <label for="yes">Yes</label><br>
-        
-        <input type="radio" id="Yes" name="Yes"value="Yes"><br>
-        <label for="No">no</label><br>
-        <input type="radio" id="No" name="No"value="No"><br>
-        </fieldset>
-           <div><input type="image" src="download.jpeg" alt="Submit Form"></div>
+        <div>
+            <form action="/submit" method="post">
+                <label for="startdate">Available start Date</label><br>
+                <input type="date" id="startdate" name="startdate" required><br><br>
 
+                <b>Willing To Relocate</b><br>
+                <input type="radio" id="yes" name="relocate" value="Yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="relocate" value="No">
+                <label for="no">No</label><br>
+            </form>
+        </div>
+    </fieldset>
+
+    <div>
+        <input type="image" src="download.jpeg" alt="Submit Form">
     </div>
 </body>
 </html>
